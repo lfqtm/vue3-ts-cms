@@ -79,3 +79,7 @@ module.exports = {
 ```
 
 3. `npx husky add .husky/commit-msg "npx --no-install commitlint --edit $1"`: 使用husky生成commit-msg文件，验证提交信息
+
+#### 二、集成环境
+
+32-2.55
