@@ -2,8 +2,6 @@
 
 ### 项目搭建
 
-#### 一、代码规范
-
 ##### editorconfig
 
 - 为不同 IDE 编辑器上处理同一项目的多个开发人员维护一致的编码风格，维护.editorconfig 文件并配合 vs 插件生效
@@ -79,3 +77,9 @@ module.exports = {
 ```
 
 3. `npx husky add .husky/commit-msg "npx --no-install commitlint --edit $1"`: 使用husky生成commit-msg文件，验证提交信息
+
+### 集成element-plus
+
+### 集成axios
+
+`npm install axios`
