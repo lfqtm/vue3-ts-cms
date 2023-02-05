@@ -60,3 +60,22 @@ npm install prettier -D
 
 ##### git commit规范
 
+- commitizen 编写规范 commit message
+
+1. `npm install commitizen -D` ：安装Commitizen
+
+2. `npx commitizen init cz-conventional-changelog --save-dev --save-exact`： 安装cz-conventional-changelog，并且初始化cz-conventional-changelog
+
+- commitlint来限制提交
+
+1. `npm i @commitlint/config-conventional @commitlint/cli -D` ：安装 @commitlint/config-conventional 和 @commitlint/cli
+
+2. 在根目录创建commitlint.config.js文件，配置commitlint
+
+```js
+module.exports = {
+  extends: ['@commitlint/config-conventional']
+}
+```
+
+3. `npx husky add .husky/commit-msg "npx --no-install commitlint --edit $1"`: 使用husky生成commit-msg文件，验证提交信息
