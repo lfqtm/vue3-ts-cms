@@ -46,29 +46,29 @@ npm install prettier -D
  $ npm run prettie
 ```
 
-#####  eslint检测
+##### eslint 检测
 
-- 创建项目时勾选eslint自动适配prettier，`'plugin:prettier/recommended'`覆盖eslintrc.js中extends配置
+- 创建项目时勾选 eslint 自动适配 prettier，`'plugin:prettier/recommended'`覆盖 eslintrc.js 中 extends 配置
 
-#####  git Husky和eslint
+##### git Husky 和 eslint
 
-- 保证组员提交代码之前都将eslint中的问题解决掉了
-- husky是一个git hook工具，可以帮助我们触发git提交的各个阶段：pre-commit、commit-msg、pre-push
+- 保证组员提交代码之前都将 eslint 中的问题解决掉了
+- husky 是一个 git hook 工具，可以帮助我们触发 git 提交的各个阶段：pre-commit、commit-msg、pre-push
 - 安装和自动配置 `npx husky-init && npm install`
 
-##### git commit规范
+##### git commit 规范
 
 - commitizen 编写规范 commit message
 
-1. `npm install commitizen -D` ：安装Commitizen
+1. `npm install commitizen -D` ：安装 Commitizen
 
-2. `npx commitizen init cz-conventional-changelog --save-dev --save-exact`： 安装cz-conventional-changelog，并且初始化cz-conventional-changelog
+2. `npx commitizen init cz-conventional-changelog --save-dev --save-exact`： 安装 cz-conventional-changelog，并且初始化 cz-conventional-changelog
 
-- commitlint来限制提交
+- commitlint 来限制提交
 
 1. `npm i @commitlint/config-conventional @commitlint/cli -D` ：安装 @commitlint/config-conventional 和 @commitlint/cli
 
-2. 在根目录创建commitlint.config.js文件，配置commitlint
+2. 在根目录创建 commitlint.config.js 文件，配置 commitlint
 
 ```js
 module.exports = {
@@ -76,10 +76,10 @@ module.exports = {
 }
 ```
 
-3. `npx husky add .husky/commit-msg "npx --no-install commitlint --edit $1"`: 使用husky生成commit-msg文件，验证提交信息
+3. `npx husky add .husky/commit-msg "npx --no-install commitlint --edit $1"`: 使用 husky 生成 commit-msg 文件，验证提交信息
 
-### 集成element-plus
+### 集成 element-plus
 
-### 集成axios
+### 集成 axios
 
 `npm install axios`
